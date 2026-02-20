@@ -5,6 +5,7 @@
 
 int multiplyNumbers(int x, int y) {
     int product = x * y;
+    retrun product;
 }
 
 int main(void) {
