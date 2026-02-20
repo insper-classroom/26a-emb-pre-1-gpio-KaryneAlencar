@@ -54,7 +54,7 @@ int main() {
             if (++cnt > 9) {
                 cnt = 0;
             }
-            seven_seg_display();
+            seven_seg_display(cnt);
             printf("cnt: %d\n", cnt);
         }
         last_btn = btn;
