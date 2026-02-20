@@ -38,12 +38,8 @@ void seven_seg_display() {
 
 int main() {
     stdio_init_all();
-    int aux = 0;
-    int BUTTON_GPIO;
     int last_btn = 1; // Button not pressed (pulled up)
     int cnt = 0;
-
-    BUTTON_GPIO = FIRST_GPIO + 7;
 
     gpio_init(BTN_PIN_G);
     gpio_set_dir(BTN_PIN_G, GPIO_IN);
@@ -64,4 +60,5 @@ int main() {
         last_btn = btn;
         sleep_ms(10); // Polling interval
     }
+    retur 0;
 }
