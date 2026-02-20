@@ -6,10 +6,11 @@ const int BTN28_PIN = 28;
 const int BTN26_PIN = 26;
 const int LED_PIN_R = 4;
 const int LED_PIN_G = 6;
-bool led_r = false;
-bool led_g = false;
 
 int main() {
+  bool led_r = false;
+  bool led_g = false;
+  
   stdio_init_all();
   gpio_init(BTN28_PIN);
   gpio_init(BTN26_PIN);
