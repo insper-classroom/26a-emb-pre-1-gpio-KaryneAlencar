@@ -27,7 +27,7 @@ void seven_seg_init() {
     }
 }
 
-void seven_seg_display() {
+void seven_seg_display(int cnt) {
     int value = bits[cnt];
     for (int i = 0; i < 7; i++) {
         int gpio = FIRST_GPIO + i;
@@ -60,5 +60,5 @@ int main() {
         last_btn = btn;
         sleep_ms(10); // Polling interval
     }
-    retur 0;
+    return 0;
 }
