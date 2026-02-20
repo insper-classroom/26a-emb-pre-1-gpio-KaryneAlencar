@@ -40,8 +40,8 @@ int main() {
     stdio_init_all();
     int aux = 0;
     int BUTTON_GPIO;
-    int last_btn; // Button not pressed (pulled up)
-    int cnt;
+    int last_btn = 1; // Button not pressed (pulled up)
+    int cnt = 0;
 
     BUTTON_GPIO = FIRST_GPIO + 7;
 
